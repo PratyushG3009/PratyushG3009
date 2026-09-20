@@ -1,0 +1,35 @@
+//Average Marks
+marks = [50, 85, 60, 75, 90, 65, 80]
+
+total = sum(marks)
+average = total / len(marks)
+
+print("Average marks =", average)
+
+//Find Student whose marks are more than average
+marks = [50, 85, 60, 75, 90, 65, 80]
+
+average = sum(marks) / len(marks)
+
+count = 0
+
+for mark in marks:
+    if mark > average:
+        count = count + 1
+
+print("Number of students =", count)
+
+//Find marks that maximum student scored
+marks = [50, 85, 60, 75, 85, 65, 80, 85, 60]
+
+maximum = 0
+answer = 0
+
+for mark in marks:
+    count = marks.count(mark)
+
+    if count > maximum:
+        maximum = count
+        answer = mark
+
+print("Most common marks =", answer)
