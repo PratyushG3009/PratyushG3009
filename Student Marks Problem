@@ -1,0 +1,118 @@
+//Maximum 
+marks = [
+    [0, 1, 2],
+    [50, 85, 80],
+    [60, 95, 35],
+    [70, 65, 68],
+    [85, 55, 65],
+    [80, 85, 90]
+]
+
+maximum = max(max(row) for row in marks)
+
+print("Maximum marks =", maximum)
+
+//Minimum 
+minimum = min(min(row) for row in marks)
+
+print("Minimum marks =", minimum)
+
+//Average 
+total = 0
+count = 0
+
+for row in marks:
+    for value in row:
+        total = total + value
+        count = count + 1
+
+average = total / count
+
+print("Average marks =", average)
+
+//Maximum of Subject1
+marks = [
+    [0, 1, 2],
+    [50, 85, 80],
+    [60, 95, 35],
+    [70, 65, 68],
+    [85, 55, 65],
+    [80, 85, 90]
+]
+
+maximum = max(row[1] for row in marks)
+
+for i in range(len(marks)):
+    if marks[i][1] == maximum:
+        print("Student ID =", i)
+        print("Marks =", maximum)
+
+//Scored below 50 in Sub1
+marks = [
+    [0, 1, 2],
+    [50, 85, 80],
+    [60, 95, 35],
+    [70, 65, 68],
+    [85, 55, 65],
+    [80, 85, 90]
+]
+
+for i in range(len(marks)):
+    if marks[i][1] < 50:
+        print("Student ID =", i)
+        print("Marks =", marks[i][1])
+
+//Add 10 marks
+marks = [
+    [0, 1, 2],
+    [50, 85, 80],
+    [60, 95, 35],
+    [70, 65, 68],
+    [85, 55, 65],
+    [80, 85, 90]
+]
+
+for i in range(len(marks)):
+    if marks[i][1] < 50:
+        marks[i][1] = marks[i][1] + 10
+
+print(marks)
+
+//Scored more than 80
+marks = [
+    [0, 1, 2],
+    [50, 85, 80],
+    [60, 95, 35],
+    [70, 65, 68],
+    [85, 55, 65],
+    [80, 85, 90]
+]
+
+for i in range(len(marks)):
+    if marks[i][2] > 80:
+        print("Student ID =", i)
+        print("Marks =", marks[i][2])
+
+//Minimum of Stud2
+marks = [
+    [0, 1, 2],
+    [50, 85, 80],
+    [60, 95, 35],
+    [70, 65, 68],
+    [85, 55, 65],
+    [80, 85, 90]
+]
+
+print("Minimum marks =", min(marks[2]))
+
+//Maximum of Stud4
+marks = [
+    [0, 1, 2],
+    [50, 85, 80],
+    [60, 95, 35],
+    [70, 65, 68],
+    [85, 55, 65],
+    [80, 85, 90]
+]
+
+print("Maximum marks =", max(marks[4]))
