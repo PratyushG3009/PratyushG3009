@@ -1,0 +1,10 @@
+class EquilateralTriangle:
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return (3 ** 0.5 / 4) * self.side * self.side
+
+t = EquilateralTriangle(5)
+
+print("Area =", t.area())
