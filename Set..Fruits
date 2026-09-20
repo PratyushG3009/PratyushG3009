@@ -1,0 +1,28 @@
+//Create sets
+
+fruits = {
+    "Apple", "Mango", "Banana", "Orange", "Grapes",
+    "Watermelon", "Litchi", "Guava", "Pineapple", "Pomegranate"
+}
+
+summer_fruits = {
+    "Mango", "Watermelon", "Litchi", "Guava"
+}
+
+winter_fruits = {
+    "Apple", "Orange", "Grapes", "Pomegranate"
+}
+
+//Print all the fruits
+
+print("All fruits =", fruits)
+print("Summer fruits =", summer_fruits)
+print("Winter fruits =", winter_fruits)
+
+//Print the summer and winter fruits
+
+print(summer_fruits & winter_fruits)
+
+//Print fruits that not present in the main set
+
+print((summer_fruits & winter_fruits) - fruits)
