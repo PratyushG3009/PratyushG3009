@@ -1,0 +1,15 @@
+class Triangle:
+    def __init__(self, side):
+        self.side = side
+
+class Square(Triangle):
+    def perimeter(self):
+        return 4 * self.side
+
+    def area(self):
+        return self.side * self.side
+
+s = Square(5)
+
+print("Perimeter =", s.perimeter())
+print("Area =", s.area())
