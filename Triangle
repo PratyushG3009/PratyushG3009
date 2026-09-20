@@ -1,0 +1,17 @@
+class Triangle:
+    def __init__(self, side1, side2, side3, angle1, angle2, angle3):
+        self.side1 = side1
+        self.side2 = side2
+        self.side3 = side3
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+
+t = Triangle(5, 6, 7, 60, 60, 60)
+
+print(t.side1)
+print(t.side2)
+print(t.side3)
+print(t.angle1)
+print(t.angle2)
+print(t.angle3)
