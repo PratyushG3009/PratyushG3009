@@ -1,0 +1,30 @@
+//Enter 10 Employees name on Tuple
+
+employees = ("Rahul", "Amit", "Priya", "Riya", "Amit",
+             "Rohan", "Rahul", "Sneha", "Amit", "Karan")
+
+//Frequency
+
+employees = ("Rahul", "Amit", "Priya", "Riya", "Amit",
+             "Rohan", "Rahul", "Sneha", "Amit", "Karan")
+
+for name in employees:
+    print(name, employees.count(name))
+
+//Remove duplicate name
+
+employees = ("Rahul", "Amit", "Priya", "Riya", "Amit",
+             "Rohan", "Rahul", "Sneha", "Amit", "Karan")
+
+distinct = tuple(set(employees))
+
+print(distinct)
+
+//Sort the Name in alphabetical order
+
+employees = ("Rahul", "Amit", "Priya", "Riya", "Amit",
+             "Rohan", "Rahul", "Sneha", "Amit", "Karan")
+
+employees = tuple(sorted(employees))
+
+print(employees)
