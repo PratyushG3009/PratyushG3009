@@ -26,3 +26,25 @@ print(summer_fruits & winter_fruits)
 //Print fruits that not present in the main set
 
 print((summer_fruits & winter_fruits) - fruits)
+
+//Find Orange
+
+if "Orange" in fruits:
+    print("Orange is in fruits")
+
+if "Orange" in summer_fruits:
+    print("Orange is in summer fruits")
+
+if "Orange" in winter_fruits:
+    print("Orange is in winter fruits")
+
+//Find Pine Apple
+
+if "Pine Apple" in fruits:
+    print("Pine Apple is in fruits")
+
+if "Pine Apple" in summer_fruits:
+    print("Pine Apple is in summer fruits")
+
+if "Pine Apple" in winter_fruits:
+    print("Pine Apple is in winter fruits")
