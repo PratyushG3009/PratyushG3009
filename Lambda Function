@@ -1,0 +1,53 @@
+//Create Dictionary
+
+students = [
+    {"roll": 1, "name": "Rahul", "dept": "CSE", "marks": 75},
+    {"roll": 2, "name": "Amit", "dept": "CSE", "marks": 85},
+    {"roll": 3, "name": "Riya", "dept": "CSE", "marks": 90},
+    {"roll": 4, "name": "Priya", "dept": "CSE", "marks": 65},
+    {"roll": 5, "name": "Rohan", "dept": "CSE", "marks": 80}
+]
+
+//Sort the students according to there marks
+
+students = [
+    {"roll": 1, "name": "Rahul", "dept": "CSE", "marks": 75},
+    {"roll": 2, "name": "Amit", "dept": "CSE", "marks": 85},
+    {"roll": 3, "name": "Riya", "dept": "CSE", "marks": 90},
+    {"roll": 4, "name": "Priya", "dept": "CSE", "marks": 65},
+    {"roll": 5, "name": "Rohan", "dept": "CSE", "marks": 80}
+]
+
+students.sort(key=lambda x: x["marks"])
+
+print(students)
+
+//Print the student who got maximum marks
+
+students = [
+    {"roll": 1, "name": "Rahul", "dept": "CSE", "marks": 75},
+    {"roll": 2, "name": "Amit", "dept": "CSE", "marks": 85},
+    {"roll": 3, "name": "Riya", "dept": "CSE", "marks": 90},
+    {"roll": 4, "name": "Priya", "dept": "CSE", "marks": 65},
+    {"roll": 5, "name": "Rohan", "dept": "CSE", "marks": 80}
+]
+
+student = max(students, key=lambda x: x["marks"])
+
+print(student)
+
+//Find average marks
+
+students = [
+    {"roll": 1, "name": "Rahul", "dept": "CSE", "marks": 75},
+    {"roll": 2, "name": "Amit", "dept": "CSE", "marks": 85},
+    {"roll": 3, "name": "Riya", "dept": "CSE", "marks": 90},
+    {"roll": 4, "name": "Priya", "dept": "CSE", "marks": 65},
+    {"roll": 5, "name": "Rohan", "dept": "CSE", "marks": 80}
+]
+
+marks = list(map(lambda x: x["marks"], students))
+
+average = sum(marks) / len(marks)
+
+print("Average marks =", average)
