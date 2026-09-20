@@ -1,0 +1,42 @@
+//Display 'Python'
+text = "Python programming"
+
+print(text[:6])
+
+//Display 'Programming'
+text = "Python programming"
+
+print(text[7:])
+
+// Insert 'Java'
+text = "Python programming"
+
+if "java" not in text:
+    text = "Python java programming"
+
+print(text)
+
+//Check Length
+text = "Python java programming"
+
+print("Length =", len(text))
+
+//Count Words
+text = "Python java programming"
+
+words = text.split()
+
+print("Number of words =", len(words))
+
+//Capitalise Each Word
+text = "Python java programming"
+
+print(text.upper())
+
+//Find Frequency
+text = "Python java programming"
+
+print("a =", text.count("a"))
+print("p =", text.count("p"))
+print("w =", text.count("w"))
+print("n =", text.count("n"))
